@@ -24,8 +24,6 @@ header {
     grid-area: header;
     padding: 3rem 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav {
@@ -38,6 +36,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 .nav {
     margin-left: 3rem;
     border-radius: 15px;
@@ -63,13 +62,15 @@ main {
 }
 
 footer {
+    background: #353b48;
     grid-area: footer;
+    padding: 3rem 0;
 }
 
-@media (max-width: 1500px) {
+@media  screen and (max-width: 1500px) {
     .container {
         display: grid;
-    
+
         grid-template-areas:
             "header header "
             "nav content "
@@ -80,12 +81,13 @@ footer {
         /* grid-gap: 10px; */
         height: 100vh;
     }
+
     nav ul li a{
         font-size: 1.9rem;
     }
 }
 
-@media (max-width: 1200px) {
+@media  screen and (max-width: 1200px) {
     .container {
         display: grid;
     
@@ -99,12 +101,13 @@ footer {
         /* grid-gap: 10px; */
         height: 100vh;
     }
+
     nav ul li a{
         font-size: 1.6rem;
     }
 }
 
-@media (max-width: 1008px) {
+@media  screen and (max-width: 1008px) {
     .container {
         display: grid;
     
@@ -118,12 +121,15 @@ footer {
         /* grid-gap: 10px; */
         height: 100vh;
     }
+
     nav ul li a{
         font-size: 1.6rem;
     }
+}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container {
+        align-items: center;
         grid-template-areas:
             "header"
             "nav"
@@ -148,14 +154,15 @@ footer {
     nav, aside {
         margin: 0;
     }
+
     nav ul li {
         display: inline-flex;
-        align-items: center;
         list-style-type: none;
         padding: 20px 0;
         margin: 0 20px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 1.2rem;
     }
 }
